@@ -5,7 +5,7 @@ import os.path as path
 
 # THIS SCRIPT DELETE THE UNNECESERY FILE THAT WERE CREATED
 # pass the folder 'identities' as an argument to the python script
-if (len(sys.argv) < 2 ):
+if (len(sys.argv) < 2 ): 
     print ('a directory path is neccesery!')
 source_folder = sys.argv[1]
 for f in os.listdir(source_folder):
