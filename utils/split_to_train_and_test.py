@@ -1,25 +1,38 @@
+from aifc import Error
 import os
 import sys
 import os.path as path
 
-# This script get a file path containing all the photos spli
-if (len(sys.argv) < 2 ):
-    print ('a directory path is neccesery!')
-source_folder = sys.argv[1]
-for f in os.listdir(source_folder):
-    try:
-        d = os.path.join(source_folder, f)
-        if os.path.isdir(d):
-            folder = d
-            print (f'now in folder: {folder}')
-            count = 0
-            for sub_file in os.listdir(folder):
-                if (sub_file.lower().endswith(('.txt', '.tri', '.fg', '.xml', '.jpg', '.tga', '.csv'))):
-                    file_to_delete = os.path.join(folder, sub_file)
-                    os.remove(file_to_delete)
-                    count +=1
-            print (f'{count} files deleted from {folder}')
-    except:
-        print(f'error in handling:{f}')
+from numpy import identity
 
-    
+# This function performs some operations required before splitting the data to test and train:
+# 1. removes all .xml files
+# 2. creates a unique name for each folder and photo
+def chunk_preproccess(root_folder):
+    for f in os.listdir(root_folder):
+        identity_dir = os.path.join(root_folder, f)
+        if os.path.isdir(identity_dir):
+            chunk_name = root_folder.split('/')
+            # change the directory name
+            new_dir = os.path.join(root_folder, chunk_name[-1]+'_'+f)
+            os.rename(identity_dir, new_dir)
+            for file_name in os.listdir(new_dir):
+                file_path = os.path.join(new_dir, file_name)
+                # remove file if its xml
+                if (file_name.lower().endswith(('.xml'))):
+                    file_to_delete = file_path
+                    os.remove(file_to_delete)
+                else: 
+                # change file name to contain chunk name
+                    new_file_name = os.path.join(new_dir, chunk_name[-1]+'_'+file_name)
+                    os.rename(file_path, os.path.join(new_dir, new_file_name))
+ 
+def split_data_set():
+    Error('not implemented yet')
+        
+if __name__ == '__main__':
+    if (len(sys.argv) < 2 ):
+        print ('a directory path is neccesery!')
+        exit()
+    source_folder = sys.argv[1]
+    chunk_preproccess(source_folder)
