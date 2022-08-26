@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE boost_serialization>
+<boost_serialization signature="serialization::archive" version="16">
+<val class_id="0" tracking_level="0" version="0">
+	<models class_id="1" tracking_level="0" version="0">
+		<count>5</count>
+		<item_version>0</item_version>
+		<item class_id="2" tracking_level="0" version="0">
+			<meshFilename>/home/yandex/CSBW2022/reifenberg/resultDB/chunk5/facegendb/identities/fgdb0001/fgdb0001_209TeethAnger.tri</meshFilename>
+			<imgFilenames class_id="3" tracking_level="0" version="0">
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>/home/yandex/CSBW2022/reifenberg/resultDB/chunk5/facegendb/identities/fgdb0001/fgdb0001Teeth.jpg</item>
+			</imgFilenames>
+			<shiny>0</shiny>
+		</item>
+		<item>
+			<meshFilename>/home/yandex/CSBW2022/reifenberg/resultDB/chunk5/facegendb/identities/fgdb0001/fgdb0001_209SockTongueAnger.tri</meshFilename>
+			<imgFilenames>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>/home/yandex/CSBW2022/reifenberg/resultDB/chunk5/facegendb/identities/fgdb0001/fgdb0001SockTongue.jpg</item>
+			</imgFilenames>
+			<shiny>0</shiny>
+		</item>
+		<item>
+			<meshFilename>/home/yandex/CSBW2022/reifenberg/resultDB/chunk5/facegendb/identities/fgdb0001/fgdb0001_209HeadAnger.tri</meshFilename>
+			<imgFilenames>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>/home/yandex/CSBW2022/reifenberg/resultDB/chunk5/facegendb/identities/fgdb0001/fgdb0001_209Head.jpg</item>
+			</imgFilenames>
+			<shiny>0</shiny>
+		</item>
+		<item>
+			<meshFilename>/home/yandex/CSBW2022/reifenberg/resultDB/chunk5/facegendb/identities/fgdb0001/fgdb0001Hair.tri</meshFilename>
+			<imgFilenames>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>/home/yandex/CSBW2022/reifenberg/resultDB/chunk5/facegendb/identities/fgdb0001/fgdb0001Hair.tga</item>
+			</imgFilenames>
+			<shiny>0</shiny>
+		</item>
+		<item>
+			<meshFilename>/home/yandex/CSBW2022/reifenberg/resultDB/chunk5/facegendb/identities/fgdb0001/fgdb0001Beard.tri</meshFilename>
+			<imgFilenames>
+				<count>1</count>
+				<item_version>0</item_version>
+				<item>/home/yandex/CSBW2022/reifenberg/resultDB/chunk5/facegendb/identities/fgdb0001/fgdb0001Beard.jpg</item>
+			</imgFilenames>
+			<shiny>0</shiny>
+		</item>
+	</models>
+	<roll>0.00000000000000000e+00</roll>
+<tilt>-0.23051069783029218</tilt>
+<pan>0.13568593421982938</pan>
+	<modelview class_id="4" tracking_level="0" version="0">
+		<scale>1.00000000000000000e+00</scale>
+		<rot class_id="5" tracking_level="0" version="0">
+			<real>1.00000000000000000e+00</real>
+			<imag class_id="6" tracking_level="0" version="0">
+				<m class_id="7" tracking_level="0" version="0">
+					<elems>
+						<count>3</count>
+						<item>0.00000000000000000e+00</item>
+						<item>0.00000000000000000e+00</item>
+						<item>0.00000000000000000e+00</item>
+					</elems>
+				</m>
+			</imag>
+		</rot>
+		<trans>
+			<m>
+				<elems>
+					<count>3</count>
+<item>0.0</item>
+<item>10.0</item>
+<item>-1000.0</item>
+				</elems>
+			</m>
+		</trans>
+	</modelview>
+	<itcsToIucs class_id="8" tracking_level="0" version="0">
+		<m_scales class_id="9" tracking_level="0" version="0">
+			<m class_id="10" tracking_level="0" version="0">
+				<elems>
+					<count>2</count>
+					<item>3.34557811915870440e+00</item>
+					<item>3.34557811915870440e+00</item>
+				</elems>
+			</m>
+		</m_scales>
+		<m_trans>
+			<m>
+				<elems>
+					<count>2</count>
+					<item>5.00000000000000000e-01</item>
+					<item>5.00000000000000000e-01</item>
+				</elems>
+			</m>
+		</m_trans>
+	</itcsToIucs>
+	<imagePixelSize class_id="11" tracking_level="0" version="0">
+		<m class_id="12" tracking_level="0" version="0">
+			<elems>
+				<count>2</count>
+<item>256</item>
+<item>256</item>
+			</elems>
+		</m>
+	</imagePixelSize>
+	<options class_id="13" tracking_level="0" version="0">
+		<lighting class_id="14" tracking_level="0" version="0">
+			<ambient class_id="15" tracking_level="0" version="0">
+				<m class_id="16" tracking_level="0" version="0">
+					<elems>
+						<count>3</count>
+						<item>4.000000060e-01</item>
+						<item>4.000000060e-01</item>
+						<item>4.000000060e-01</item>
+					</elems>
+				</m>
+			</ambient>
+			<lights class_id="17" tracking_level="0" version="0">
+				<count>1</count>
+				<item_version>0</item_version>
+				<item class_id="18" tracking_level="0" version="0">
+					<colour>
+						<m>
+							<elems>
+								<count>3</count>
+<item>0.7805896155702343</item>
+<item>0.6493913323671938</item>
+<item>0.4384955215062249</item>
+							</elems>
+						</m>
+					</colour>
+					<direction>
+						<m>
+							<elems>
+								<count>3</count>
+<item>0.5902512697623292</item>
+<item>0.004377531327616091</item>
+<item>0.5768146108188389</item>
+							</elems>
+						</m>
+					</direction>
+				</item>
+			</lights>
+		</lighting>
+		<backgroundColor class_id="19" tracking_level="0" version="0">
+			<m_c class_id="20" tracking_level="0" version="0">
+				<elems>
+					<count>4</count>
+<item>255</item>
+<item>255</item>
+<item>255</item>
+					<item>0.000000000e+00</item>
+				</elems>
+			</m_c>
+		</backgroundColor>
+		<antiAliasBitDepth>3</antiAliasBitDepth>
+		<renderSurfPoints>0</renderSurfPoints>
+		<useMaps>1</useMaps>
+		<allShiny>0</allShiny>
+	</options>
+</val>
+</boost_serialization>
+
