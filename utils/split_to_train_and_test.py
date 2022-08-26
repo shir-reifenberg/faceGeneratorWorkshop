@@ -9,10 +9,11 @@ from numpy import identity
 # 1. removes all .xml files
 # 2. creates a unique name for each folder and photo
 def chunk_preproccess(root_folder):
+    chunk_name = root_folder.split('\\')
+    print (f'chunk name is: {chunk_name}')
     for f in os.listdir(root_folder):
         identity_dir = os.path.join(root_folder, f)
         if os.path.isdir(identity_dir):
-            chunk_name = root_folder.split('/')
             # change the directory name
             new_dir = os.path.join(root_folder, chunk_name[-1]+'_'+f)
             os.rename(identity_dir, new_dir)
