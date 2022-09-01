@@ -1,9 +1,6 @@
-from aifc import Error
 import os
 import sys
 import os.path as path
-
-from numpy import identity
 
 # This function performs some operations required before splitting the data to test and train:
 # 1. removes all .xml files
@@ -31,7 +28,7 @@ def chunk_preproccess(root_folder):
                     os.rename(file_path, os.path.join(new_dir, new_file_name))
  
 def split_data_set():
-    Error('not implemented yet')
+    return True
         
 if __name__ == '__main__':
     if (len(sys.argv) < 2 ):
