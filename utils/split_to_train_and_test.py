@@ -51,7 +51,7 @@ def split_data_set_per_id(root_folder):
         # choose photos for test and train
         id_dir = os.path.join(root_folder, id)
         images = [f for f in os.listdir(id_dir) if os.path.isfile(os.path.join(id_dir,f))]
-        train_choice = random.sample(images, 240)
+        train_choice = random.sample(images, round(len(images)*0.8))
         test_choice = [f for f in images if f not in train_choice]
 
         # create identidy dir in test folder and in train folder
