@@ -9,10 +9,9 @@ import time
 import os.path as path
 
 # global parameters:
-fg3sdk_root = r"/home/yandex/CSBW2022/reifenberg/Fg3Sdk3S2FullSrc"
-dataset_root = r"/home/yandex/CSBW2022/reifenberg/resultDB/chunk72"
-real_people_library = r"/home/yandex/CSBW2022/reifenberg/photoDB/chunk7"
-# photo = r"C:\Users\1\Desktop\Fg3Sdk3S2FullSrc\Fg3Sdk3S2FullSrc\data\full\Photos\Andrew\front.jpg"
+fg3sdk_root = r"replaceThisWithActualPath/Fg3Sdk3S2FullSrc"
+dataset_root = r"replaceThisWithActualPath"
+real_people_library = r"replaceThisWithActualPath"
 file_sep = '/'
 
 csamdir = f'{fg3sdk_root}{file_sep}data{file_sep}csam'
@@ -98,22 +97,6 @@ beard_colors = [["Auburn", "Black", "Blonde", "Brown", "Grey"],  # b00
                 ["Black", "Blonde", "Brown", "Grey", "Red"],  # b06
                 ["Black", "Blonde", "Brown", "Grey"],  # b07
                 ["Auburn", "Black", "Blonde", "Brown", "Grey"]]  # b08]
-
-# # Glasses
-# glasses_types = ["Glasses_blue",
-#                  "Glasses_gray",
-#                  "Glasses_stripes",
-#                  "Glasses_yellow"]
-#
-# add_sun_glasses_prob = 0.2
-# sun_glasses_types = ["Glasses_black_sun",
-#                      "Glasses_blue_sun",
-#                      "Glasses_brown_sun",
-#                      "Glasses_gray_sun"]
-
-# secondary_hair_prob = 0.05
-# secondary_beard_prob = 0.05
-# secondary_glasses_prob = 0.05
 
 # pose parameters
 tilt_min = 0.0
@@ -977,20 +960,3 @@ def clean_db():
 if __name__ == '__main__':
     create_identities()
     create_random_images()
-# make_all_hairs('D:\\datasets\\facegendb\\fgdb0000\\fgdb0000')
-# add_expressions('D:\\datasets\\facegendb\\fgdb0001\\fgdb0001')
-#   create_systematic_images()
-#    test_expression_strengths()
-#    resize_images('D:\\datasets\\facegendb\\identities\\fgdb0001\\expressions','png','Render')
-#    rename_dirs()
-#    move_images()
-#    count_images()
-#    move_files_to_dir()
-#    move_images()
-#    rename_files()
-#    clean_db()
-# fgdb0213 missing
-# fgdb0431 missing
-# fgdb0432 missing
-# fgdb0433 missing
-# identity fgdb0842 has 338 images

@@ -1,4 +1,5 @@
 from os import listdir, makedirs, chdir
+import sys
 import os.path as path
 import shutil
 import numpy as np
@@ -7,11 +8,8 @@ import dlib
 from lxml import etree as ET
 from imutils import face_utils
 
-input_path = r'C:\Users\shirr\Documents\intro to python development\faceProject\photoDB'
-output_path = r'C:\Users\shirr\Documents\intro to python development\faceProject\new'
-example_xml_file = r'C:\Users\shirr\Documents\intro to python development\faceProject\landmarks_example.bpt.xml'
-landmarks_detector_model = r'C:\Users\shirr\Documents\intro to python development\faceProject\shape_predictor_68_face_landmarks.dat'
-
+example_xml_file = r'replaceThiswithActualPath\landmarks_example.bpt.xml'
+landmarks_detector_model = r'replaceThiswithActualPath\shape_predictor_68_face_landmarks.dat'
 
 # Gets the path that contains all folders with the photos inside
 # Returns a list with all photo paths 
@@ -142,5 +140,10 @@ def generate_xml_two(landmarks, file_name):
     out_file.close()
     
 if __name__ == '__main__':
+    if (len(sys.argv) < 3 ):
+        print ('an input and output paths are neccesery!')
+        exit()
+    input_path = sys.argv[1]
+    output_path = sys.argv[2]
     prepare_photofit_input(input_path, output_path)
     #get_nested_photo_paths(output_path)

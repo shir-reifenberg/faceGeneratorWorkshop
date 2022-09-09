@@ -9,8 +9,6 @@ import dlib
 from lxml import etree as ET
 from imutils import face_utils
 
-input_path = r'C:\Users\shirr\Documents\intro to python development\faceProject\pics\NIVL'
-
 # Gets a directory path with many
 # images and randomley picks one picture of each identity
 def extract_pics_by_identity(source_path):
@@ -26,17 +24,10 @@ def extract_pics_by_identity(source_path):
     for i in selected_img_paths:
         shutil.move(path.join(source_path, i), result_folder_name)
         
-        
-in_path = r'C:\Users\shirr\Documents\intro to python development\faceProject\pngPhotos' 
-out_path = r'C:\Users\shirr\Documents\intro to python development\faceProject\photoDB'  
-def convert_png_to_jpg(path):
+def convert_png_to_jpg(path, output_path):
     for image_path in listdir(path):
         im1 = Image.open(path+'\\'+image_path)
         new_file_name = image_path.split('.')
-        dest_path = out_path+'\\'+new_file_name[0]+'.jpg'
+        dest_path = output_path+'\\'+new_file_name[0]+'.jpg'
         im1.save(dest_path)
-        
-convert_png_to_jpg(in_path)
-
-    
     
